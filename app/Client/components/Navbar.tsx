@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     isLoggedIn ? null :
     <nav 
-      className="flex justify-between items-center px-4  py-4 iphone:py-8 sm:px-8 sm:py-4 md:px-10 lg:px-20"
+      className="flex justify-between items-center px-4 py-4 iphone:py-8 sm:px-8 sm:py-4 md:px-10 lg:px-20"
     >
         {/* Logo + name */}
         <div className="flex items-center space-x-4 iphone:space-x-2 sm:space-x-4 ">
@@ -24,7 +24,7 @@ const Navbar = () => {
               alt="Blue whatsapp logo"
               className="w-10 h-10 iphone:w-8 iphone:h-8 sm:w-12 sm:h-12"
             />
-            <h1 className="font-extrabold text-md text-sm sm:text-xl">
+            <h1 className="font-extrabold text-md iphone:text-sm sm:text-xl">
                 Whatsapp
             </h1>
         </div>

@@ -63,7 +63,7 @@ const SignupForm = () => {
 
         {/* Already have an account */}
         <div className="w-full centered-flex">
-            <p className="text-md iphone:text-xs sm:text-md">
+            <p className="text-md iphone:text-xs sm:text-md md:text-[0.9rem]">
                 Already have an account? <span onClick={() => setTimeout(() => {router.push("/Client/Auth/Login")}, 100)}
                 className="hover:cursor-pointer underline text-blue-500 hover:brightness-90">Login here</span>
             </p>

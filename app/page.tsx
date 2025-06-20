@@ -8,15 +8,3 @@ const page = () => {
 }
 
 export default page
-
-//  // outer sidebar // innersidebar 
-
-// | - - - | -------------------
-// |       |
-// |       |
-// |       |
-// |       |
-// |       |
-// |       | 
-// |       |
-// --------- -----------

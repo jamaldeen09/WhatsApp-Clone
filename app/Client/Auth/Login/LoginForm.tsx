@@ -46,7 +46,7 @@ const LoginForm = () => {
                 <div className="max-w-lg w-full flex items-start">
                   <p 
                     className="text-blue-500 hover:cursor-pointer hover:brightness-80 transition-all duration-300
-                    hover:scale-105 text-md iphone:text-xs sm:text-md"
+                    hover:scale-105 text-md iphone:text-xs sm:text-sm md:text-[0.9rem]"
                   >
                     Forgot password?
                   </p>
@@ -63,7 +63,7 @@ const LoginForm = () => {
 
         {/* Already have an account */}
         <div className="w-full centered-flex">
-            <p className="text-md iphone:text-xs sm:text-md">
+            <p className="text-md iphone:text-xs sm:text-md md:text-[0.9rem]">
                Dont have an account? <span onClick={() => setTimeout(() => {router.push("/Client/Auth/Signup")}, 100)}
             className="hover:cursor-pointer underline text-blue-500 hover:brightness-90">Signup here</span>
             </p>
