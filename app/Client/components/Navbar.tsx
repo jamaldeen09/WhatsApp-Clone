@@ -25,7 +25,7 @@ const Navbar = () => {
               className="w-10 h-10 iphone:w-8 iphone:h-8 sm:w-12 sm:h-12"
             />
             <h1 className="font-extrabold text-md iphone:text-sm sm:text-xl">
-                Whatsapp
+                Chatapp
             </h1>
         </div>
 
@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className={`w-fit centered-flex`}>
             <Button 
               text={pathname === "/" ? "login" : "Go back"}
-              routeFunc={pathname === "/" ? () => setTimeout(() => {router.push("Client/Auth/Login")}, 300) : () => {setTimeout(() => {router.push("/")}, 300)}}
+              routeFunc={pathname === "/" ? () => router.push("/Client/Auth/Login") : () => router.push("/")}
               includeIcon={true}
             />
         </div>

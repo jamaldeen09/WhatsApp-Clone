@@ -49,7 +49,7 @@ const MainApp = () => {
               <div className="w-fit centered-flex">
                  <Button 
                    text="Get Started"
-                   routeFunc={() => setTimeout(() => {router.push("Client/Auth/Signup")}, 300)}
+                   routeFunc={() => router.push("/Client/Auth/Signup")}
                   />
               </div>
           </div>

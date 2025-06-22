@@ -9,9 +9,11 @@
   --breakpoint-iphone-min:100px;
   --breakpoint-sm:480px;
   --breakpoint-md:768px;
-  --breakpoint-lg:1280px;
-  --breakpoint-max-sm:350px
+  --breakpoint-lg:1300px;
+  --breakpoint-max-lg:1024px;
+  --breakpoint-max-sm:350px;
 }
+
 
 @layer components {
   .centered-flex {
@@ -19,7 +21,7 @@
   }
 
   .formWidth {
-    @apply w-full h-fit max-w-xs iphone:max-w-64 sm:max-w-sm md:max-w-xl
+    @apply w-full h-fit max-w-xs iphone:max-w-[17rem] sm:max-w-sm md:max-w-xl 
   }
 
   .formSpacing {
@@ -28,6 +30,14 @@
 
   .col-centered {
     @apply flex flex-col items-center
+  }
+
+  .col-centered-full {
+    @apply flex flex-col items-center h-screen
+  }
+
+  .col {
+    @apply flex flex-col
   }
 
   .basic-fit {
@@ -49,6 +59,53 @@
 }
 
 
+.personContainer:hover .arrow {
+  display:flex
+}
+
+.arrow {
+  display:none;
+}
+.chat:hover .popup {
+  display:flex;
+}
+
+.popup {
+  display:none;
+}
+
+
+.status:hover .statuspopup {
+  display:flex
+}
+
+.statuspopup {
+  display:none
+}
+
+.img:hover .imgpopup {
+  display:flex
+}
+
+.imgpopup {
+  display:none
+}
+
+.settings:hover .settingspopup {
+  display:flex
+}
+
+.settingspopup {
+  display:none;
+}
+
+.user:hover .userpopup {
+  display:flex
+}
+
+.userpopup {
+  display:none
+}
 /* Shad Cn */
 @custom-variant dark (&:is(.dark *));
 
